@@ -68,8 +68,9 @@ public class GameManager {
         int i ;
         int col = getRand();
         for (i=0;i<getCols();i++){
-            if (i==col)
-            pokemonballsOnMap[0][i] = true;
+            if (i==col) {
+                pokemonballsOnMap[0][i] = true;
+            }
 
         }
 
