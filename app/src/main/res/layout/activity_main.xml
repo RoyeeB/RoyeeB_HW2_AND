@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/pokemon_img_background"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_hearts"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:weightSum="3"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mygame_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_heart"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mygame_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_heart"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mygame_IMG_heart3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_heart"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:weightSum="7"
+       android:layout_below="@+id/linear_hearts"
+       >
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="3"
+           >
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball1"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball2"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball3"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="3"
+           >
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball4"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball5"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball6"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="3"
+           >
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball7"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball8"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball9"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:scaleType="fitCenter"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="3"
+           >
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball10"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball11"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball12"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="3"
+           >
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball13"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball14"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_pokemonball15"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:src="@drawable/ic_pokemonball"
+               />
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="3"
+           >
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_picahu1"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:src="@drawable/ic_picachu"
+               android:visibility="invisible"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_picahu2"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
+               android:src="@drawable/ic_picachu"
+               android:visibility="visible"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_picahu3"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:scaleType="fitCenter"
+               android:src="@drawable/ic_picachu"
+               android:visibility="invisible"
+               />
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:orientation="horizontal"
+           android:weightSum="2"
+           >
+
+           <androidx.appcompat.widget.AppCompatImageButton
+               android:id="@+id/mygame_left_BTN_arrow"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:src="@drawable/ic_left_arrow"
+               android:scaleType="fitCenter"
+               android:background="@null"
+               />
+
+           <androidx.appcompat.widget.AppCompatImageButton
+               android:id="@+id/mygame_right_BTN_arrow"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:src="@drawable/ic_right_arrow"
+               android:scaleType="fitCenter"
+               android:background="@null"
+               />
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</RelativeLayout>
