@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/picachu_img_backgournd"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mygame_LBL_choosesensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="choose how you want to play"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mygame_BTN_sensor"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Sensor"
+        android:layout_below="@id/mygame_LBL_choosesensor"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mygame_BTN_buttons"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mygame_BTN_sensor"
+        android:layout_centerInParent="true"
+        android:text="Buttons"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

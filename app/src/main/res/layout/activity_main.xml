@@ -8,13 +8,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--Background-->
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:background="@drawable/pokemon_img_background"
         />
-
+<!--Hearts-->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linear_hearts"
         android:layout_width="140dp"
@@ -52,12 +53,12 @@
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-
+<!--Pokaballs + picachus + arrows-->
    <androidx.appcompat.widget.LinearLayoutCompat
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:orientation="vertical"
-       android:weightSum="7"
+       android:weightSum="11"
        android:layout_below="@+id/linear_hearts"
        >
 
@@ -65,187 +66,1167 @@
            android:layout_width="match_parent"
            android:layout_height="0dp"
            android:layout_weight="1"
-           android:weightSum="3"
+           android:weightSum="5"
            >
 
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
            <androidx.appcompat.widget.AppCompatImageView
                android:id="@+id/mygame_IMG_pokemonball1"
-               android:layout_width="0dp"
+               android:layout_width="match_parent"
                android:layout_height="match_parent"
                android:scaleType="fitCenter"
-               android:layout_weight="1"
                android:visibility="invisible"
                android:src="@drawable/ic_pokemonball"
                />
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_gift1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:visibility="invisible"
+               android:src="@drawable/ic_gift"
+               />
+           </RelativeLayout>
+
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
            <androidx.appcompat.widget.AppCompatImageView
                android:id="@+id/mygame_IMG_pokemonball2"
-               android:layout_width="0dp"
+               android:layout_width="match_parent"
                android:layout_height="match_parent"
                android:scaleType="fitCenter"
-               android:layout_weight="1"
                android:visibility="invisible"
                android:src="@drawable/ic_pokemonball"
                />
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball3"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift2"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
+
+               >
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball3"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift3"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball4"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift4"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball5"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift5"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
        </androidx.appcompat.widget.LinearLayoutCompat>
 
        <androidx.appcompat.widget.LinearLayoutCompat
            android:layout_width="match_parent"
            android:layout_height="0dp"
            android:layout_weight="1"
-           android:weightSum="3"
+           android:weightSum="5"
+           >
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball6"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift6"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball7"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift7"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball8"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift8"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball9"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift9"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball10"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift10"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="5"
            >
 
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball4"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball5"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball11"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift11"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball6"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball12"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift12"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball13"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift13"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball14"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift14"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball15"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift15"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+
+
        </androidx.appcompat.widget.LinearLayoutCompat>
 
        <androidx.appcompat.widget.LinearLayoutCompat
            android:layout_width="match_parent"
            android:layout_height="0dp"
            android:layout_weight="1"
-           android:weightSum="3"
+           android:weightSum="5"
            >
 
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball7"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball8"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball16"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift16"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball9"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball17"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift17"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:scaleType="fitCenter"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball18"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift18"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball19"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift19"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball20"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift20"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
        </androidx.appcompat.widget.LinearLayoutCompat>
 
        <androidx.appcompat.widget.LinearLayoutCompat
            android:layout_width="match_parent"
            android:layout_height="0dp"
            android:layout_weight="1"
-           android:weightSum="3"
+           android:weightSum="5"
            >
 
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball10"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball11"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball21"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift21"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball12"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball22"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift22"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball23"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift23"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1">
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball24"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/ic_pokemonball"
+                   android:visibility="invisible" />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift24"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/ic_gift"
+                   android:visibility="invisible" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball25"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift25"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
        </androidx.appcompat.widget.LinearLayoutCompat>
 
        <androidx.appcompat.widget.LinearLayoutCompat
            android:layout_width="match_parent"
            android:layout_height="0dp"
            android:layout_weight="1"
-           android:weightSum="3"
+           android:weightSum="5"
            >
 
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball13"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball14"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball26"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift26"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
-           <androidx.appcompat.widget.AppCompatImageView
-               android:id="@+id/mygame_IMG_pokemonball15"
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:scaleType="fitCenter"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball27"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift27"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
                android:layout_weight="1"
-               android:visibility="invisible"
-               android:src="@drawable/ic_pokemonball"
-               />
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball28"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift28"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball29"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift29"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball30"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift30"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
        </androidx.appcompat.widget.LinearLayoutCompat>
 
        <androidx.appcompat.widget.LinearLayoutCompat
            android:layout_width="match_parent"
            android:layout_height="0dp"
            android:layout_weight="1"
-           android:weightSum="3"
+           android:weightSum="5"
+           >
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball31"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift31"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball32"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift32"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball33"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift33"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball34"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift34"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball35"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift35"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="5"
+           >
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball36"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift36"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball37"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift37"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball38"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift38"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball39"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift39"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball40"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift40"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="5"
+           >
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball41"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift41"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball42"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift42"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball43"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift43"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball44"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift44"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_pokemonball45"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_pokemonball"
+                   />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/mygame_IMG_gift45"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitCenter"
+                   android:visibility="invisible"
+                   android:src="@drawable/ic_gift"
+                   />
+           </RelativeLayout>
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+<!-- picachus-->
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:weightSum="5"
            >
 
            <androidx.appcompat.widget.AppCompatImageView
@@ -254,8 +1235,8 @@
                android:layout_height="match_parent"
                android:scaleType="fitCenter"
                android:layout_weight="1"
-               android:src="@drawable/ic_picachu"
                android:visibility="invisible"
+               android:src="@drawable/ic_picachu"
                />
            <androidx.appcompat.widget.AppCompatImageView
                android:id="@+id/mygame_IMG_picahu2"
@@ -263,20 +1244,38 @@
                android:layout_height="match_parent"
                android:scaleType="fitCenter"
                android:layout_weight="1"
+               android:visibility="invisible"
                android:src="@drawable/ic_picachu"
-               android:visibility="visible"
                />
            <androidx.appcompat.widget.AppCompatImageView
                android:id="@+id/mygame_IMG_picahu3"
                android:layout_width="0dp"
                android:layout_height="match_parent"
                android:layout_weight="1"
+               android:visibility="visible"
                android:scaleType="fitCenter"
                android:src="@drawable/ic_picachu"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_picahu4"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:scaleType="fitCenter"
+               android:layout_weight="1"
                android:visibility="invisible"
+               android:src="@drawable/ic_picachu"
+               />
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/mygame_IMG_picahu5"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:visibility="invisible"
+               android:scaleType="fitCenter"
+               android:src="@drawable/ic_picachu"
                />
        </androidx.appcompat.widget.LinearLayoutCompat>
-
+<!--arrows-->
        <androidx.appcompat.widget.LinearLayoutCompat
            android:layout_width="match_parent"
            android:layout_height="0dp"

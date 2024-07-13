@@ -12,16 +12,19 @@ public class GameManager {
     private int lifes = MAX_LIFES;
     public boolean[] lifesArrBool;
     boolean[][] pokemonballsOnMap;
+    public boolean[][]giftsOnMap;
     private int picachuIndex;
     boolean hit;
     boolean finish;
-    public static final int COLUMNS = 3;
-    public static final int ROWS = 5;
+    boolean gift;
+    public static final int COLUMNS = 5;
+    public static final int ROWS = 9;
 
 
     public GameManager() {
-        picachuIndex = 1;
+        picachuIndex = 2;
         pokemonballsOnMap = new boolean[ROWS][COLUMNS];
+        giftsOnMap = new boolean[ROWS][COLUMNS];
         initHeartLive();
     }
 
@@ -51,10 +54,19 @@ public class GameManager {
     public void setPicachuIndex(int picachuIndex){
         this.picachuIndex=picachuIndex;
     }
+    public int getPicachuIndex(){
+        return picachuIndex;
+    }
 
-    public void setHit (boolean hit1){
+
+
+        public void setHit (boolean hit1){
         hit = hit1;
     }
+
+    public void setHitGift(boolean hit1) {gift = hit;}
+
+    public boolean isGift(){return gift;}
 
     public boolean finish(){
         return finish;
@@ -63,6 +75,8 @@ public class GameManager {
     public boolean active(int row , int col){
         return pokemonballsOnMap[row][col];
     }
+
+    public boolean giftActive (int row, int col){return giftsOnMap[row][col];}
 
     public void newPokemonball (){
         int i ;
@@ -73,7 +87,6 @@ public class GameManager {
             }
 
         }
-
     }
 
     public int getRand(){
@@ -84,8 +97,11 @@ public class GameManager {
     }
 
     public void updateAll(){
+
         updateAllGame();
         newPokemonball();
+       updateGifts();
+       updateAllNew();
     }
 
     private void updateAllGame() {
@@ -104,7 +120,6 @@ public class GameManager {
                             lifesArrBool[lifes] = false;
 
                             if (lifes == 0) {
-                                resetGame();
                                 finish = true;
                             }
                         }
@@ -116,6 +131,40 @@ public class GameManager {
                 }
             }
         }
+    }
+
+    public void updateGifts() {
+        for (int i = getRows()-1; i >=0;i--)
+             for (int j = 0; j <getCols();j++){
+
+        {
+                if( giftActive(i,j) && i == getRows()-1) {
+                    giftsOnMap[i][j] = false;
+
+                    if (j == picachuIndex) {
+                        gift=true;
+
+                    }
+                }
+                else if(i != getRows()-1){
+                    giftsOnMap[i+1][j]=giftsOnMap[i][j];
+
+                }
+            }
+        }
+    }
+
+    public void updateAllNew(){
+        int col =getRand();
+        for(int i = 0;i<getCols();i++)
+            pokemonballsOnMap[0][i] = col == i;
+        int colForGift = getRand();
+        while(col == colForGift){
+            colForGift=getRand();
+        }
+        for(int i = 0;i<getCols();i++)
+            giftsOnMap[0][i] = colForGift == i;
+
     }
 
     private void resetGame() {
@@ -132,4 +181,7 @@ public class GameManager {
     public void setFinish(boolean finish) {
         this.finish = finish;
     }
+
+
+
 }
